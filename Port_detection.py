@@ -145,7 +145,7 @@ def get_title(test_url):
 
 
 def parser_args():
-    parser = argparse.ArgumentParser(usage='python PortScan.py --target [urls file]')
+    parser = argparse.ArgumentParser(usage='python Port_detection.py --target [urls file]')
     parser.add_argument('-t', '--target', dest='target', help='The destination of file path', required=True)
     if len(sys.argv) == 1:
         sys.argv.append('-h')
@@ -178,7 +178,7 @@ if __name__ == '__main__':
     start_time = datetime.datetime.now()
     argv = parser_args()
     url_path = argv.target
-    path = r"D:\Security Tools\masscan1.0.4\x64"
+    path = r"D:\Security Tools\masscan1.0.4\x64"              #注意更改路径
     os.chdir(path)
     main()
     for url in final_domains:
