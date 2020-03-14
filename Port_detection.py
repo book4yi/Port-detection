@@ -41,7 +41,7 @@ def portscan(scan_ip):
     os.system(
         'masscan.exe ' +
         scan_ip +
-        ' -p1-65535 -oJ masscan1.json --rate 2000')
+        ' -p1-65535 -oJ masscan.json --rate 2000')
     # 提取json文件中的端口
     with open('masscan.json', 'r') as f:
         for line in f:
