@@ -114,6 +114,7 @@ def Scan(scan_ip):
 def main():
     que = queue.Queue()
     try:
+        # 要扫描的ip列表，一行一个
         f = open(r'ips.txt', 'r')
         for line in f.readlines():
             final_ip = line.strip()
