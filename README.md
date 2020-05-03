@@ -6,7 +6,7 @@ Port-detection用于批量探测端口开放情况
 3. 结果保存在txt文件中  
 ## 用法：
 ```
-python　Port_detection.py　--target　[urls file]
+python　Port_detection.py
 已附带windows下使用的masscan，结合自身情况更改masscan路径
 ```
 
